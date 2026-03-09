@@ -4,6 +4,7 @@ const { BlobServiceClient } = require("@azure/storage-blob");
 const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
 const containerName = "images";
 
+// List all blobs in the container
 async function listImages() {
     
     if (!connectionString) {
